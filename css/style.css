@@ -1,0 +1,319 @@
+/* =======================================================================
+Template Name: Dil Hospital
+Author:  SmartEye Adminpanel
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+======================================================================= */
+/* ===================================== Import Less ================================== */
+@font-face {
+  font-family: 'mouse-300';
+  src: url("../fonts/Amaranth-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'mouse-500';
+  src: url("../fonts/Amaranth-Bold.ttf") format("truetype"); }
+/* ===================================== Basic CSS ================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444; }
+
+a:hover {
+  color: #444; }
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.cp {
+  cursor: pointer; }
+
+html, body {
+  height: 100%; }
+
+p {
+  margin-bottom: 0px;
+  width: 100%; }
+
+.no-padding {
+  padding: 0px; }
+
+.no-margin {
+  margin: 0px; }
+
+.hid {
+  display: none; }
+
+.top-mar {
+  margin-top: 15px; }
+
+.h-100 {
+  height: 100%; }
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important; }
+
+.container-fluid {
+  padding: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+strong {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #f7f7ff !important;
+  font-family: "mouse-300", Arial, Helvetica, sans-serif;
+  color: #6A6A6A; }
+
+.session-title {
+  padding: 30px;
+  margin: 0px; }
+  .session-title h2 {
+    width: 100%;
+    text-align: center; }
+  .session-title p {
+    max-width: 850px;
+    text-align: center;
+    float: none;
+    margin: auto; }
+  .session-title span {
+    float: right;
+    font-style: italic; }
+
+.inner-title {
+  padding: 20px;
+  padding-left: 0px;
+  margin-bottom: 30px; }
+  .inner-title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "slab", Arial, Helvetica, sans-serif; }
+  .inner-title p {
+    width: 100%;
+    text-align: center; }
+
+.page-nav {
+  padding: 40px;
+  text-align: center;
+  padding-top: 160px; }
+  .page-nav ul {
+    float: none;
+    margin: auto; }
+  .page-nav h2 {
+    font-size: 36px;
+    width: 100%;
+    color: #444; }
+    @media screen and (max-width: 600px) {
+      .page-nav h2 {
+        font-size: 26px; } }
+  .page-nav ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px; }
+    .page-nav ul li i {
+      width: 30px;
+      text-align: center;
+      color: #444; }
+    .page-nav ul li a {
+      color: #444; }
+
+.btn-success {
+  background-color: #00ab9f;
+  border-color: #00ab9f; }
+  .btn-success:hover {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:active {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:focus {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important;
+    box-shadow: none !important; }
+
+.btn-info {
+  background-color: #4f6dcd;
+  border-color: #4f6dcd; }
+  .btn-info:hover {
+    background-color: #4f6dcd !important;
+    border-color: #4f6dcd !important; }
+  .btn-info:active {
+    background-color: #4f6dcd !important;
+    border-color: #4f6dcd !important; }
+  .btn-info:focus {
+    background-color: #4f6dcd !important;
+    border-color: #4f6dcd !important;
+    box-shadow: none !important; }
+
+.btn {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px; }
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 2px solid  #00a8df; }
+
+.btn-light {
+  background-color: #FFF;
+  color: #3F3F3F; }
+
+.collapse.show {
+  display: block !important; }
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #00ab9f !important; }
+
+.form-control {
+  background-color: #F8F8F8;
+  margin-bottom: 20px; }
+  .form-control:focus {
+    background-color: #FFF;
+    border-color: #CCC; }
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0px 30px; } }
+
+/* ===================================== Login Page CSS ================================== */
+input,
+input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 3; }
+
+.h-100 {
+  height: 100%;
+  width: 100%; }
+
+.full-bg {
+  background-image: url(../images/bg_2.jpg);
+  background-size: cover;
+  color: #FFF; }
+  .full-bg h3 {
+    color: #FFF;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    margin-top: -20px; }
+  .full-bg .form-control {
+    background-color: #FFF;
+    border-radius: 0px;
+    padding: 8px;
+    font-size: 20px; }
+  .full-bg p {
+    width: 100%;
+    text-align: right;
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: 600; }
+  .full-bg .btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    font-weight: 600;
+    background-color: #FFF;
+    color: #444; }
+  .full-bg .logo {
+    position: absolute;
+    top: 0px;
+    font-size: 38px;
+    padding: 10px;
+    color: #FFF;
+    font-weight: 600; }
+    .full-bg .logo a {
+      color: #FFF; }
+    @media screen and (max-width: 409px) {
+      .full-bg .logo {
+        font-size: 32px; } }
+  .full-bg .foter-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 6%;
+    font-size: 16px;
+    padding: 10px;
+    color: #FFF;
+    font-weight: 600; }
+    .full-bg .foter-credit a {
+      color: #FFF; }
+  .full-bg .bg-layer {
+    width: 250px; }
+
+.login-box {
+  background-color: #00ab9f;
+  -webkit-box-shadow: -1px 2px 42px -2px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: -1px 2px 42px -2px rgba(0, 0, 0, 0.63);
+  box-shadow: -1px 2px 42px -2px rgba(0, 0, 0, 0.63);
+  border-top: 5px solid #00ab9f;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px; }
+  .login-box .fa-codepen {
+    float: none;
+    margin: auto;
+    font-size: 62px;
+    margin-bottom: 20px; }
+  .login-box h3 {
+    color: #FFF;
+    margin-top: 0px;
+    font-size: 22px; }
+  .login-box .input-group .input-group-prepend .input-group-text {
+    background-color: #FFF;
+    border-right: 0px; }
+    .login-box .input-group .input-group-prepend .input-group-text i {
+      font-size: 13px; }
+  .login-box .input-group .form-control {
+    border-left: 0px; }
+  .login-box p {
+    color: #FFF;
+    font-family: "mouse-300", Arial, Helvetica, sans-serif;
+    font-weight: 300; }
+    .login-box p label {
+      float: left;
+      width: auto;
+      padding: 0px; }
+    .login-box p a {
+      color: #FFF; }
+  .login-box .no-c {
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    margin-bottom: 10px; }
+    .login-box .no-c a {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
